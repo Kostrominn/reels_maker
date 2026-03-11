@@ -1,7 +1,0 @@
-{
-  "ref": "yadisk:disk:/Интервью/Вова/IMG_0003.mov",
-  "other": "yadisk:disk:/Интервью/Вова/IMG_0018.mov",
-  "offset_start": -22.0,
-  "method": "manual_anchor",
-  "notes": "anchor phrase: ref(0003)=147s, other(0018)=125s"
-}

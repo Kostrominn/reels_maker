@@ -1,7 +1,0 @@
-{
-  "ref": "yadisk:disk:/Интервью/Вова/IMG_0003.mov",
-  "other": "yadisk:disk:/Интервью/Вова/IMG_0018.mov",
-  "offset_start": -23.52,
-  "method": "global_envelope_fft_300s",
-  "notes": "Confirmed by user as better lipsync for Vova pair."
-}

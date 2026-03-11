@@ -47,6 +47,9 @@ storage/audio/*
 storage/transcripts/*
 storage/clips/*
 storage/output/*
+storage/sync/*
+storage_tmp_*/
+highlights/*
 
 # Keep directory structure
 !storage/raw/.gitkeep
@@ -54,6 +57,8 @@ storage/output/*
 !storage/transcripts/.gitkeep
 !storage/clips/.gitkeep
 !storage/output/.gitkeep
+!storage/sync/.gitkeep
+!highlights/.gitkeep
 
 # Test files
 *.mov

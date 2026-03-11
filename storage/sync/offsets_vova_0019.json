@@ -1,7 +1,0 @@
-{
-  "ref": "yadisk:disk:/Интервью/Вова/IMG_0003.mov",
-  "other": "yadisk:disk:/Интервью/Вова/IMG_0019.mov",
-  "offset_start": -3331.79,
-  "method": "creation_time_plus_audio_xcorr_probe",
-  "notes": "IMG_0019 continuation after IMG_0018; offset estimated from metadata gap and verified by local xcorr window."
-}

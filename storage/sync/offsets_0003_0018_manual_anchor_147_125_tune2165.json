@@ -1,7 +1,0 @@
-{
-  "ref": "yadisk:disk:/Интервью/Вова/IMG_0003.mov",
-  "other": "yadisk:disk:/Интервью/Вова/IMG_0018.mov",
-  "offset_start": -21.65,
-  "method": "manual_anchor_tuned",
-  "notes": "tuned from -22.0 after lipsync check: audio was slightly early"
-}
