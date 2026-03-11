@@ -1,0 +1,94 @@
+{
+  "IMG_5311.MOV": [
+    {
+      "label": "about_me_clean_start",
+      "start": 2.0,
+      "end": 27.54
+    },
+    {
+      "label": "experience_results_mmmf_prizes",
+      "start": 27.54,
+      "end": 61.2
+    },
+    {
+      "label": "olymp_5_8_no_text2_no_8class_tail",
+      "start": 63.8,
+      "end": 104.38
+    },
+    {
+      "label": "olymp_8class_euler_start_fixed",
+      "start": 116.8,
+      "end": 125.56
+    },
+    {
+      "label": "olymp_9class_region_vseros",
+      "start": 125.56,
+      "end": 144.08
+    },
+    {
+      "label": "olymp_10_11_perchnevye_bvi",
+      "start": 144.08,
+      "end": 173.4
+    },
+    {
+      "label": "listochki_no_dubl_markers",
+      "start": 286.0,
+      "end": 319.98
+    },
+    {
+      "label": "weekly_flow_after_sdayut_no_diag",
+      "start": 377.08,
+      "end": 406.11
+    },
+    {
+      "label": "contests_full_phrase_not_cut",
+      "start": 430.31,
+      "end": 452.07
+    },
+    {
+      "label": "groups_5_6_full_sentence_end",
+      "start": 463.65,
+      "end": 496.29
+    },
+    {
+      "label": "group_7_8_with_vseros_final",
+      "start": 496.29,
+      "end": 513.69
+    },
+    {
+      "label": "group_9_10_only",
+      "start": 516.0,
+      "end": 533.52
+    },
+    {
+      "label": "next_season_base_group_trim_end",
+      "start": 534.8,
+      "end": 546.12
+    },
+    {
+      "label": "programming_course_fuller",
+      "start": 546.12,
+      "end": 571.84
+    },
+    {
+      "label": "results_context_start_from_second_take",
+      "start": 619.07,
+      "end": 659.83
+    },
+    {
+      "label": "faq_intro_classes_zero_separate",
+      "start": 680.84,
+      "end": 714.88
+    },
+    {
+      "label": "faq_price_with_dm_note_subs",
+      "start": 718.1,
+      "end": 740.18
+    },
+    {
+      "label": "faq_contact_start_from_retry",
+      "start": 764.5,
+      "end": 789.49
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "IMG_5277.MOV": [
+    {
+      "label": "about_me",
+      "start": 1.04,
+      "end": 22.04
+    },
+    {
+      "label": "experience_results",
+      "start": 22.04,
+      "end": 55.04
+    }
+  ],
+  "IMG_5279.MOV": [
+    {
+      "label": "olymp_5_8",
+      "start": 1.49,
+      "end": 33.49
+    },
+    {
+      "label": "olymp_8_10",
+      "start": 33.49,
+      "end": 66.49
+    },
+    {
+      "label": "olymp_10_11",
+      "start": 66.49,
+      "end": 96.49
+    }
+  ],
+  "IMG_5280.MOV": [
+    {
+      "label": "format_group",
+      "start": 1.2,
+      "end": 57.0
+    },
+    {
+      "label": "homework_feedback",
+      "start": 57.0,
+      "end": 113.73
+    },
+    {
+      "label": "weekly_flow",
+      "start": 113.73,
+      "end": 170.05
+    },
+    {
+      "label": "contests_writing",
+      "start": 170.05,
+      "end": 213.17
+    }
+  ],
+  "IMG_5282.MOV": [
+    {
+      "label": "groups_5_6",
+      "start": 0.69,
+      "end": 60.14
+    },
+    {
+      "label": "groups_7_8",
+      "start": 60.14,
+      "end": 124.57
+    },
+    {
+      "label": "group_9_11",
+      "start": 124.57,
+      "end": 171.93
+    },
+    {
+      "label": "next_season",
+      "start": 171.93,
+      "end": 212.93
+    }
+  ],
+  "IMG_5286.MOV": [
+    {
+      "label": "results_context",
+      "start": 1.23,
+      "end": 24.39
+    },
+    {
+      "label": "case_examples",
+      "start": 24.39,
+      "end": 60.11
+    }
+  ],
+  "IMG_5288.MOV": [
+    {
+      "label": "faq_classes_start",
+      "start": 1.01,
+      "end": 36.65
+    },
+    {
+      "label": "faq_price_format",
+      "start": 36.65,
+      "end": 73.41
+    },
+    {
+      "label": "faq_schedule_contact",
+      "start": 73.41,
+      "end": 101.21
+    }
+  ]
+}
+

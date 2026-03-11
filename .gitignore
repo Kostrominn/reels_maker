@@ -1,0 +1,89 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv
+.venv.bak/
+
+# Environment variables
+.env
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Storage directories (large files)
+storage/raw/*
+storage/audio/*
+storage/transcripts/*
+storage/clips/*
+storage/output/*
+
+# Keep directory structure
+!storage/raw/.gitkeep
+!storage/audio/.gitkeep
+!storage/transcripts/.gitkeep
+!storage/clips/.gitkeep
+!storage/output/.gitkeep
+
+# Test files
+*.mov
+*.MOV
+*.mp4
+*.avi
+*.mkv
+*.wav
+*.mp3
+*.jpg
+*.jpeg
+*.png
+*.heic
+*.webp
+
+# Logs
+*.log
+logs/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# pytest
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Models (if downloading locally)
+models/
+*.pt
+*.pth
+*.ckpt

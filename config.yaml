@@ -1,0 +1,76 @@
+# Конфигурация Reels Maker
+
+# Транскрибация
+transcription:
+  model: "large-v3"  # tiny, base, small, medium, large, large-v3
+  language: "ru"
+  device: "cpu"  # cpu или cuda
+  compute_type: "int8"  # int8, float16, float32
+
+# LLM анализ
+llm:
+  provider: "openrouter"  # openrouter, openai, groq, together, fireworks, ollama
+  model: "qwen/qwen-2.5-72b-instruct"
+  # base_url: "https://openrouter.ai/api/v1"  # опционально, обычно берётся по provider
+  temperature: 0.3
+  max_tokens: 2000
+  
+  # Критерии для рилсов
+  min_duration: 15  # секунды
+  max_duration: 90
+  target_duration: 45
+  # Разбиение длинных транскриптов
+  max_chars: 12000
+  chunk_overlap_segments: 4
+  max_candidates: 6
+
+# Видео
+video:
+  # Качество вывода
+  output_quality: "high"  # low, medium, high
+  output_format: "mp4"
+  output_codec: "libx264"
+  
+  # Сжатие исходников
+  compress_input: false
+  compression_crf: 28  # 18-28, меньше = лучше качество
+  
+  # Переключение камер
+  min_shot_duration: 2.0  # минимальная длительность кадра (сек)
+  enable_transitions: false  # плавные переходы
+  transition_duration: 0.3  # длительность перехода (сек)
+
+# Камеры
+cameras:
+  enable_multicam: false
+  default_camera: "general"  # общий план по умолчанию
+  
+  # Маппинг спикеров к камерам (заполняется после первого запуска)
+  speaker_to_camera:
+    Speaker_1: "camera_1"
+    Speaker_2: "camera_2"
+    Speaker_3: "general"
+
+# Хранилище
+storage:
+  base_path: "./storage"
+  
+  # Автоочистка
+  auto_cleanup: true
+  keep_intermediates: false  # сохранять промежуточные файлы
+  
+  # Лимиты
+  max_disk_usage_gb: 15  # максимальное использование диска
+  warn_disk_usage_gb: 10
+
+# Логирование
+logging:
+  level: "INFO"  # DEBUG, INFO, WARNING, ERROR
+  file: "reels_maker.log"
+  console_output: true
+
+# Производительность
+performance:
+  parallel_processing: false
+  max_workers: 2
+  chunk_size_minutes: 30  # размер чанков для обработки

@@ -1,0 +1,8 @@
+{
+  "ref": "yadisk:disk:/Интервью/Вова/IMG_0003.mov",
+  "other": "yadisk:disk:/Интервью/Вова/IMG_0018.mov",
+  "offset_start": -22.453796875,
+  "method": "audio2_multiwindow_residual_median",
+  "notes": "Base offset -22.0, residuals measured on safe cached windows (130..190 and 240), robust candidate median from confidence+residual filter.",
+  "evidence_summary": "storage/sync/aligned/vova_resid_many_safe/summary.json"
+}

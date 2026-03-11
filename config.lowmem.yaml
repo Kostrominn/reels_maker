@@ -1,0 +1,26 @@
+# Low-memory profile for long remote interview processing.
+transcription:
+  backend: "faster-whisper"
+  model: "medium"
+  language: "ru"
+  device: "cpu"
+  compute_type: "int8"
+  cpu_threads: 4
+
+llm:
+  provider: "openrouter"
+  model: "qwen/qwen-2.5-72b-instruct"
+  # base_url: "https://openrouter.ai/api/v1"
+  temperature: 0.3
+  max_tokens: 2000
+  min_duration: 15
+  max_duration: 90
+  target_duration: 45
+  max_chars: 12000
+  chunk_overlap_segments: 4
+  max_candidates: 6
+
+video:
+  output_quality: "low"
+  output_codec: "libx264"
+  normalize_audio: false

@@ -1,0 +1,5 @@
+# Быстрый превью-рендер (мультикамеры)
+video:
+  output_quality: "low"
+  output_codec: "libx264"
+  normalize_audio: false

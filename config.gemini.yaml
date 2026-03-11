@@ -1,0 +1,30 @@
+# Профиль для Gemini API (не open-source, но можно использовать для сравнения качества).
+
+transcription:
+  backend: "faster-whisper"
+  model: "medium"
+  language: "ru"
+  device: "cpu"
+  compute_type: "int8"
+
+llm:
+  provider: "gemini"
+  base_url: "https://generativelanguage.googleapis.com/v1beta/openai"
+  model: "gemini-2.5-pro"
+  temperature: 0.2
+  max_tokens: 1800
+  min_duration: 15
+  max_duration: 90
+  target_duration: 45
+  max_chars: 12000
+  chunk_overlap_segments: 2
+  max_candidates: 6
+
+video:
+  output_quality: "high"
+  output_format: "mp4"
+  output_codec: "libx264"
+  normalize_audio: true
+
+storage:
+  base_path: "./storage"

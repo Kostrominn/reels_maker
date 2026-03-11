@@ -1,0 +1,94 @@
+{
+  "IMG_5311.MOV": [
+    {
+      "label": "intro_with_greeting",
+      "start": 2.6,
+      "end": 27.54
+    },
+    {
+      "label": "experience_plus_kolmogorov_ural",
+      "start": 27.54,
+      "end": 60.8
+    },
+    {
+      "label": "olympiads_are_different_5_7",
+      "start": 64.8,
+      "end": 106.2
+    },
+    {
+      "label": "grade8_euler_strong_student",
+      "start": 112.92,
+      "end": 138.68
+    },
+    {
+      "label": "grade9_region_and_vseros_track",
+      "start": 138.68,
+      "end": 149.2
+    },
+    {
+      "label": "grade10_11_perchnevye_and_list",
+      "start": 149.2,
+      "end": 172.7
+    },
+    {
+      "label": "format_groups_from_scratch",
+      "start": 286.0,
+      "end": 327.9
+    },
+    {
+      "label": "listochki_plus_homework_plus_diagnostic",
+      "start": 377.08,
+      "end": 406.11
+    },
+    {
+      "label": "contests_and_why_they_matter",
+      "start": 406.11,
+      "end": 418.67
+    },
+    {
+      "label": "group_5_6_overview",
+      "start": 463.65,
+      "end": 501.25
+    },
+    {
+      "label": "group_7_8_and_vseros_final",
+      "start": 501.25,
+      "end": 515.0
+    },
+    {
+      "label": "group_9_10_confidence_track",
+      "start": 515.0,
+      "end": 533.2
+    },
+    {
+      "label": "next_season_base_group",
+      "start": 533.52,
+      "end": 546.12
+    },
+    {
+      "label": "programming_course_extended",
+      "start": 546.12,
+      "end": 586.68
+    },
+    {
+      "label": "results_without_faq_tail",
+      "start": 609.79,
+      "end": 659.83
+    },
+    {
+      "label": "faq_intro_separate",
+      "start": 659.83,
+      "end": 669.6
+    },
+    {
+      "label": "faq_classes_zero_and_price",
+      "start": 669.6,
+      "end": 740.18
+    },
+    {
+      "label": "contact_from_second_take",
+      "start": 778.5,
+      "end": 789.49
+    }
+  ]
+}

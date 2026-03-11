@@ -1,0 +1,13 @@
+# Качественная транскрибация через GigaAM-v3 (e2e RNNT).
+transcription:
+  backend: "gigaam"
+  # Можно писать и коротко: "e2e_rnnt" (внутри GigaAM это v3_e2e_rnnt)
+  model: "v3_e2e_rnnt"
+  language: "ru"
+  device: "cpu"
+  # Для GigaAM не используется, но оставляем поле для совместимости
+  compute_type: "int8"
+
+  # Если longform зависимости не установлены / нет HF_TOKEN, будет fallback на чанки.
+  gigaam_use_longform: true
+  gigaam_chunk_seconds: 20.0

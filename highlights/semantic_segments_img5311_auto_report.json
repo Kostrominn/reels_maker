@@ -1,0 +1,146 @@
+[
+  {
+    "label": "about_me_1_04_22_04",
+    "start": 0.5,
+    "end": 27.54,
+    "score": 0.7477,
+    "block_idx": 1,
+    "src_label": "about_me (1.04-22.04)"
+  },
+  {
+    "label": "experience_results_22_04_55_04",
+    "start": 27.54,
+    "end": 55.94,
+    "score": 0.6739,
+    "block_idx": 2,
+    "src_label": "experience_results (22.04-55.04)"
+  },
+  {
+    "label": "olymp_5_8_1_49_33_49",
+    "start": 55.94,
+    "end": 112.92,
+    "score": 0.5232,
+    "block_idx": 3,
+    "src_label": "olymp_5_8 (1.49-33.49)"
+  },
+  {
+    "label": "olymp_8_10_33_49_66_49",
+    "start": 120.68,
+    "end": 132.68,
+    "score": 0.5493,
+    "block_idx": 4,
+    "src_label": "olymp_8_10 (33.49-66.49)"
+  },
+  {
+    "label": "olymp_10_11_66_49_96_49",
+    "start": 144.08,
+    "end": 155.28,
+    "score": 0.5933,
+    "block_idx": 5,
+    "src_label": "olymp_10_11 (66.49-96.49)"
+  },
+  {
+    "label": "format_group_1_20_57_00",
+    "start": 173.4,
+    "end": 223.04,
+    "score": 0.546,
+    "block_idx": 6,
+    "src_label": "format_group (1.20-57.00)"
+  },
+  {
+    "label": "homework_feedback_57_00_113_73",
+    "start": 284.9,
+    "end": 319.98,
+    "score": 0.745,
+    "block_idx": 7,
+    "src_label": "homework_feedback (57.00-113.73)"
+  },
+  {
+    "label": "weekly_flow_113_73_170_05",
+    "start": 358.98,
+    "end": 412.47,
+    "score": 0.6429,
+    "block_idx": 8,
+    "src_label": "weekly_flow (113.73-170.05)"
+  },
+  {
+    "label": "contests_writing_170_05_213_17",
+    "start": 430.31,
+    "end": 440.91,
+    "score": 0.5598,
+    "block_idx": 9,
+    "src_label": "contests_writing (170.05-213.17)"
+  },
+  {
+    "label": "groups_5_6_0_69_60_14",
+    "start": 463.65,
+    "end": 496.29,
+    "score": 0.5378,
+    "block_idx": 10,
+    "src_label": "groups_5_6 (0.69-60.14)"
+  },
+  {
+    "label": "groups_7_8_60_14_124_57",
+    "start": 501.25,
+    "end": 513.69,
+    "score": 0.7853,
+    "block_idx": 11,
+    "src_label": "groups_7_8 (60.14-124.57)"
+  },
+  {
+    "label": "group_9_11_124_57_171_93",
+    "start": 513.69,
+    "end": 533.52,
+    "score": 0.6291,
+    "block_idx": 12,
+    "src_label": "group_9_11 (124.57-171.93)"
+  },
+  {
+    "label": "next_season_171_93_212_93",
+    "start": 553.8,
+    "end": 564.08,
+    "score": 0.4189,
+    "block_idx": 13,
+    "src_label": "next_season (171.93-212.93)"
+  },
+  {
+    "label": "results_context_1_23_24_39",
+    "start": 609.79,
+    "end": 635.07,
+    "score": 0.7644,
+    "block_idx": 14,
+    "src_label": "results_context (1.23-24.39)"
+  },
+  {
+    "label": "case_examples_24_39_60_11",
+    "start": 653.75,
+    "end": 669.6,
+    "score": 0.3397,
+    "block_idx": 15,
+    "src_label": "case_examples (24.39-60.11)"
+  },
+  {
+    "label": "faq_classes_start_1_01_36_65",
+    "start": 680.84,
+    "end": 703.08,
+    "score": 0.6709,
+    "block_idx": 16,
+    "src_label": "faq_classes_start (1.01-36.65)"
+  },
+  {
+    "label": "faq_price_format_36_65_73_41",
+    "start": 718.1,
+    "end": 742.94,
+    "score": 0.5274,
+    "block_idx": 17,
+    "src_label": "faq_price_format (36.65-73.41)"
+  },
+  {
+    "label": "faq_schedule_contact_73_41_101_21",
+    "start": 743.38,
+    "end": 789.49,
+    "score": 0.6259,
+    "block_idx": 18,
+    "src_label": "faq_schedule_contact (73.41-101.21)"
+  }
+]

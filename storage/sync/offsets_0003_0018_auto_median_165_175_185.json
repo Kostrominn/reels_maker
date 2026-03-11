@@ -1,0 +1,16 @@
+{
+  "ref": "yadisk:disk:/Интервью/Вова/IMG_0003.mov",
+  "other": "yadisk:disk:/Интервью/Вова/IMG_0018.mov",
+  "offset_start": -21.4882890625,
+  "method": "auto_correct_median_verify_points",
+  "verify_points_seconds": [
+    165,
+    175,
+    185
+  ],
+  "offset_candidates": [
+    -23.0253203125,
+    -20.4184765625,
+    -21.4882890625
+  ]
+}

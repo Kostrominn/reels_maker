@@ -1,0 +1,7 @@
+{
+  "ref": "yadisk:disk:/Интервью/Вова/IMG_0003.mov",
+  "other": "yadisk:disk:/Интервью/Вова/IMG_0018.mov",
+  "offset_start": -20.4184765625,
+  "method": "auto_correct_verify175",
+  "notes": "derived by sync-apply --auto-correct around verify_start=175s"
+}

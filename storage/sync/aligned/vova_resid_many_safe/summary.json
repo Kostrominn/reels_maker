@@ -1,0 +1,112 @@
+{
+  "base_offset": -22.0,
+  "windows": [
+    {
+      "start_seconds": 130.0,
+      "residual_seconds": -0.8249765625,
+      "confidence": 8.362206658703855,
+      "candidate_offset": -21.1750234375,
+      "dir": "/Users/mac/Documents/reels_maker/storage/sync/aligned/vova_resid_many_safe/vs_130"
+    },
+    {
+      "start_seconds": 135.0,
+      "residual_seconds": 0.44615625,
+      "confidence": 7.836647631342815,
+      "candidate_offset": -22.44615625,
+      "dir": "/Users/mac/Documents/reels_maker/storage/sync/aligned/vova_resid_many_safe/vs_135"
+    },
+    {
+      "start_seconds": 140.0,
+      "residual_seconds": -1.769953125,
+      "confidence": 8.286627432612562,
+      "candidate_offset": -20.230046875,
+      "dir": "/Users/mac/Documents/reels_maker/storage/sync/aligned/vova_resid_many_safe/vs_140"
+    },
+    {
+      "start_seconds": 145.0,
+      "residual_seconds": 0.453796875,
+      "confidence": 8.15989239742209,
+      "candidate_offset": -22.453796875,
+      "dir": "/Users/mac/Documents/reels_maker/storage/sync/aligned/vova_resid_many_safe/vs_145"
+    },
+    {
+      "start_seconds": 150.0,
+      "residual_seconds": 0.453796875,
+      "confidence": 8.910356639319032,
+      "candidate_offset": -22.453796875,
+      "dir": "/Users/mac/Documents/reels_maker/storage/sync/aligned/vova_resid_many_safe/vs_150"
+    },
+    {
+      "start_seconds": 155.0,
+      "residual_seconds": 0.4538046875,
+      "confidence": 7.975357044451579,
+      "candidate_offset": -22.4538046875,
+      "dir": "/Users/mac/Documents/reels_maker/storage/sync/aligned/vova_resid_many_safe/vs_155"
+    },
+    {
+      "start_seconds": 160.0,
+      "residual_seconds": 1.0417578125,
+      "confidence": 8.061408323847203,
+      "candidate_offset": -23.0417578125,
+      "dir": "/Users/mac/Documents/reels_maker/storage/sync/aligned/vova_resid_many_safe/vs_160"
+    },
+    {
+      "start_seconds": 165.0,
+      "residual_seconds": -0.2896953125,
+      "confidence": 8.91891687687497,
+      "candidate_offset": -21.7103046875,
+      "dir": "/Users/mac/Documents/reels_maker/storage/sync/aligned/vova_resid_many_safe/vs_165"
+    },
+    {
+      "start_seconds": 170.0,
+      "residual_seconds": -0.640078125,
+      "confidence": 7.910680593702593,
+      "candidate_offset": -21.359921875,
+      "dir": "/Users/mac/Documents/reels_maker/storage/sync/aligned/vova_resid_many_safe/vs_170"
+    },
+    {
+      "start_seconds": 175.0,
+      "residual_seconds": -0.6403515625,
+      "confidence": 8.516566393858886,
+      "candidate_offset": -21.3596484375,
+      "dir": "/Users/mac/Documents/reels_maker/storage/sync/aligned/vova_resid_many_safe/vs_175"
+    },
+    {
+      "start_seconds": 180.0,
+      "residual_seconds": 1.97478125,
+      "confidence": 8.05077887117092,
+      "candidate_offset": -23.97478125,
+      "dir": "/Users/mac/Documents/reels_maker/storage/sync/aligned/vova_resid_many_safe/vs_180"
+    },
+    {
+      "start_seconds": 185.0,
+      "residual_seconds": 1.9926875,
+      "confidence": 8.751430227344738,
+      "candidate_offset": -23.9926875,
+      "dir": "/Users/mac/Documents/reels_maker/storage/sync/aligned/vova_resid_many_safe/vs_185"
+    },
+    {
+      "start_seconds": 190.0,
+      "residual_seconds": 1.9926875,
+      "confidence": 7.9500197411099265,
+      "candidate_offset": -23.9926875,
+      "dir": "/Users/mac/Documents/reels_maker/storage/sync/aligned/vova_resid_many_safe/vs_190"
+    },
+    {
+      "start_seconds": 240.0,
+      "residual_seconds": 1.1346796875,
+      "confidence": 8.938294468733135,
+      "candidate_offset": -23.1346796875,
+      "dir": "/Users/mac/Documents/reels_maker/storage/sync/aligned/vova_resid_many_safe/vs_240"
+    }
+  ],
+  "filter": {
+    "min_confidence": 8.0,
+    "max_abs_residual": 1.2,
+    "kept": 7,
+    "total": 14
+  },
+  "candidate_median": -22.453796875,
+  "candidate_median_trim80": -22.453796875,
+  "candidate_median_weighted": -22.453796875
+}

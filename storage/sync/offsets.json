@@ -1,0 +1,19 @@
+{
+  "ref": "yadisk:disk:/Интервью/Вова/IMG_0003.mov",
+  "other": "yadisk:disk:/Интервью/Вова/IMG_0018.mov",
+  "start_seconds": 276.0,
+  "window_seconds": 18.0,
+  "max_lag_seconds": 40.0,
+  "offset_start": 5.235507812499986,
+  "confidence_start": 36.50443012516586,
+  "method_start": "refine_rms",
+  "auto_search": false,
+  "ref_wav": "/Users/mac/Documents/reels_maker/storage/sync/sync_ref_best.wav",
+  "other_wav": "/Users/mac/Documents/reels_maker/storage/sync/sync_other_best.wav",
+  "offset_start_raw": 5.3555078125,
+  "confidence_start_raw": 36.50443012516586,
+  "method_start_raw": "gcc_phat",
+  "refine_span_seconds": 0.8,
+  "refine_step_seconds": 0.01,
+  "refine_score": 1.3862049579620361
+}

@@ -1,0 +1,43 @@
+{
+  "ref": "yadisk:disk:/Интервью/Вова/IMG_0003.mov",
+  "other": "yadisk:disk:/Интервью/Вова/IMG_0018.mov",
+  "offset_seconds": -21.359921875,
+  "ref_trim_seconds": 0.0,
+  "other_trim_seconds": 21.359921875,
+  "ref_out": "/Users/mac/Documents/reels_maker/storage/sync/aligned/vova_auto_many/vs_170/IMG_0003_aligned.wav",
+  "other_out": "/Users/mac/Documents/reels_maker/storage/sync/aligned/vova_auto_many/vs_170/IMG_0018_aligned.wav",
+  "reencode": false,
+  "fast_seek_only": false,
+  "copy_unchanged": false,
+  "audio_only": true,
+  "audio_window_seconds": null,
+  "auto_correct": true,
+  "auto_correct_iters": 5,
+  "auto_correct_steps": [
+    {
+      "iteration": 1,
+      "offset_before": -22.0,
+      "residual_offset": -0.640078125,
+      "offset_after": -21.359921875
+    }
+  ],
+  "cache": {
+    "cache_dir": "storage/sync/cache_vova_0003_0018",
+    "ref_cache": null,
+    "other_cache": null
+  },
+  "verify": {
+    "start_seconds": 170.0,
+    "window_seconds": 24.0,
+    "max_lag_seconds": 2.0,
+    "offset_seconds": 0.025265625,
+    "confidence": 9.60007711219598,
+    "method": "gcc_phat",
+    "tolerance_seconds": 0.15,
+    "ok": true,
+    "ref_check_wav": "/Users/mac/Documents/reels_maker/storage/sync/aligned/vova_auto_many/vs_170/IMG_0003_aligned_check.wav",
+    "other_check_wav": "/Users/mac/Documents/reels_maker/storage/sync/aligned/vova_auto_many/vs_170/IMG_0018_aligned_check.wav",
+    "lr_check_wav": "/Users/mac/Documents/reels_maker/storage/sync/aligned/vova_auto_many/vs_170/aligned_lr_check.wav",
+    "null_check_wav": "/Users/mac/Documents/reels_maker/storage/sync/aligned/vova_auto_many/vs_170/aligned_null_check.wav"
+  }
+}

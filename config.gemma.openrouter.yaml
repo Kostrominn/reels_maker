@@ -1,0 +1,30 @@
+# Open-source Gemma через OpenRouter.
+
+transcription:
+  backend: "faster-whisper"
+  model: "medium"
+  language: "ru"
+  device: "cpu"
+  compute_type: "int8"
+
+llm:
+  provider: "openrouter"
+  base_url: "https://openrouter.ai/api/v1"
+  model: "google/gemma-3-27b-it:free"
+  temperature: 0.2
+  max_tokens: 1800
+  min_duration: 15
+  max_duration: 90
+  target_duration: 45
+  max_chars: 12000
+  chunk_overlap_segments: 2
+  max_candidates: 6
+
+video:
+  output_quality: "high"
+  output_format: "mp4"
+  output_codec: "libx264"
+  normalize_audio: true
+
+storage:
+  base_path: "./storage"
