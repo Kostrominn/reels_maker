@@ -9,8 +9,8 @@ transcription:
 
 # LLM анализ
 llm:
-  provider: "openrouter"  # openrouter, openai, groq, together, fireworks, ollama
-  model: "qwen/qwen-2.5-72b-instruct"
+  provider: "openai"  # openrouter, openai, groq, together, fireworks, ollama
+  model: "gpt-5.2"
   # base_url: "https://openrouter.ai/api/v1"  # опционально, обычно берётся по provider
   temperature: 0.3
   max_tokens: 2000

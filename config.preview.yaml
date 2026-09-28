@@ -1,3 +1,7 @@
+llm:
+  provider: "openai"
+  model: "gpt-5.2"
+
 # Быстрый превью-рендер (мультикамеры)
 video:
   output_quality: "low"
