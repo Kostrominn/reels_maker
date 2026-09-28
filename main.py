@@ -12,6 +12,7 @@ from src.instagram_uploader import InstagramUploadError, run_instagram_upload
 from src.llm_analyzer import LlmAnalyzer
 from src.models import ClipAnalysis, Transcript
 from src.multicam import cmd_multicam
+from src.reels_stats import ReelsStatsError, run_reels_stats
 from src.sync import apply_sync_trim, cache_full_audio, make_sync_mix, sync_offset
 from src.transcriber import Transcriber
 from src.utils import AppConfig, ensure_dirs, get_storage_paths, load_config, read_json, write_json
@@ -41,6 +42,15 @@ def _video_stem(video_path: str | Path) -> str:
             name = Path(unquote(parsed.path)).name
         return Path(name).stem or "remote"
     return Path(video_path).stem
+
+
+def _fmt_metric(value: float | None) -> str:
+    if value is None:
+        return "-"
+    rounded = round(value)
+    if abs(value - rounded) < 1e-9:
+        return str(int(rounded))
+    return f"{value:.2f}"
 
 
 def cmd_transcribe(
@@ -781,6 +791,44 @@ def build_parser() -> argparse.ArgumentParser:
         help="Do not share reels to feed",
     )
     p_ig.set_defaults(share_to_feed=True)
+
+    p_stats = sub.add_parser("reels-stats", help="summarize posted reels stats from tracker CSV")
+    p_stats.add_argument(
+        "--tracker-csv",
+        type=str,
+        default="MONTH_TRACKER_20260311.csv",
+        help="Tracker CSV path (default: MONTH_TRACKER_20260311.csv)",
+    )
+    p_stats.add_argument(
+        "--mark-posted-until",
+        type=str,
+        default=None,
+        help="Mark reel rows with date <= YYYY-MM-DD as posted",
+    )
+    p_stats.add_argument(
+        "--no-write",
+        action="store_true",
+        help="Do not write tracker updates (dry-run mark mode)",
+    )
+    p_stats.add_argument("--top", type=int, default=5, help="Top N reels by views_24h")
+    p_stats.add_argument(
+        "--summary-json",
+        type=str,
+        default=None,
+        help="Optional path to save summary JSON",
+    )
+    p_stats.add_argument(
+        "--excel-csv",
+        type=str,
+        default=None,
+        help="Optional Excel-friendly CSV output (UTF-8 BOM + ';' separator)",
+    )
+    p_stats.add_argument(
+        "--excel-tsv",
+        type=str,
+        default=None,
+        help="Optional Excel Unicode TSV output (UTF-16, tab-separated)",
+    )
     return p
 
 
@@ -1019,6 +1067,74 @@ def main() -> None:
                 console.print(f"[green]Saved video[/green] -> {outputs['video']}")
         except (RuntimeError, YandexDiskError, FileNotFoundError) as e:
             console.print(f"[red]Multicam error[/red]: {e}")
+            raise SystemExit(1) from e
+    elif args.command == "reels-stats":
+        try:
+            summary = run_reels_stats(
+                tracker_csv=Path(args.tracker_csv),
+                mark_posted_until=args.mark_posted_until,
+                write_changes=not args.no_write,
+                top_n=args.top,
+                summary_json=Path(args.summary_json) if args.summary_json else None,
+                excel_csv=Path(args.excel_csv) if args.excel_csv else None,
+                excel_tsv=Path(args.excel_tsv) if args.excel_tsv else None,
+            )
+            console.print(f"[green]Tracker[/green] -> {summary['tracker_csv']}")
+            if args.excel_csv:
+                console.print(f"[green]Excel CSV[/green] -> {args.excel_csv}")
+            if args.excel_tsv:
+                console.print(f"[green]Excel TSV[/green] -> {args.excel_tsv}")
+            if args.mark_posted_until:
+                mode = "dry-run" if args.no_write else "updated"
+                console.print(
+                    f"[green]Mark posted until[/green] {args.mark_posted_until} "
+                    f"({mode}), changed_rows={summary['rows_marked_posted']}"
+                )
+            console.print(
+                f"[cyan]Reels[/cyan] total={summary['reels_total']} "
+                f"posted={summary['posted_reels']} "
+                f"remaining={summary['not_posted_reels']}"
+            )
+            console.print(
+                f"[cyan]views_24h[/cyan] filled={summary['views_24h_filled']}/{summary['posted_reels']} "
+                f"missing={summary['views_24h_missing']} "
+                f"avg={_fmt_metric(summary['views_24h_avg'])} "
+                f"median={_fmt_metric(summary['views_24h_median'])} "
+                f"sum={_fmt_metric(summary['views_24h_sum'])}"
+            )
+            engagement = summary.get("engagement_24h_totals") or {}
+            console.print(
+                f"[cyan]Engagement 24h[/cyan] "
+                f"likes={_fmt_metric(engagement.get('likes_24h'))} "
+                f"comments={_fmt_metric(engagement.get('comments_24h'))} "
+                f"saves={_fmt_metric(engagement.get('saves_24h'))} "
+                f"shares={_fmt_metric(engagement.get('shares_24h'))}"
+            )
+
+            top_rows = summary.get("top_reels_by_views_24h") or []
+            if top_rows:
+                console.print("[bold]Top by views_24h[/bold]")
+                for row in top_rows:
+                    console.print(
+                        f"  {row.get('date', '')} | idx {row.get('file_index', '')} | "
+                        f"views={_fmt_metric(row.get('views_24h'))} | {row.get('title', '')}"
+                    )
+
+            missing_rows = summary.get("missing_views_24h_rows") or []
+            if missing_rows:
+                preview = missing_rows[:10]
+                console.print(f"[yellow]Missing views_24h[/yellow] {len(missing_rows)} posted reels")
+                for row in preview:
+                    console.print(
+                        f"  {row.get('date', '')} | idx {row.get('file_index', '')} | {row.get('title', '')}"
+                    )
+                if len(missing_rows) > len(preview):
+                    console.print(f"  ... and {len(missing_rows) - len(preview)} more")
+
+            if args.summary_json:
+                console.print(f"[green]Summary[/green] -> {args.summary_json}")
+        except (FileNotFoundError, ReelsStatsError, ValueError) as e:
+            console.print(f"[red]Reels stats error[/red]: {e}")
             raise SystemExit(1) from e
     elif args.command == "instagram-upload":
         try:
