@@ -92,3 +92,6 @@ models/
 *.pt
 *.pth
 *.ckpt
+
+# interview_reels caches inside projects
+.cache/

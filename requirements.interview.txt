@@ -1,0 +1,10 @@
+# interview_reels: render, checks and the publication pack
+numpy>=1.26
+scipy>=1.11
+Pillow>=10.0
+
+# tests
+pytest>=8.0
+
+# transcription tools (words, hear, verify-text) need openai-whisper and torch:
+#   pip install openai-whisper
