@@ -60,4 +60,4 @@ python -m pytest tests/
 
 ## Лицензия
 
-MIT
+[MIT](LICENSE)
